@@ -55,7 +55,7 @@ public class Producto {
     
     
  public int totalProducto(){
-  int totalproducto= (this.getCantidad() +this.getProductoe());
+  int totalproducto= (this.getCantidad() );
   return totalproducto;
  }
  
