@@ -34,13 +34,4 @@ public class ProductoSal {
         this.cantidadS = cantidadS;
     }
 
-
-
-
-
-
-
-
-
-
 }
