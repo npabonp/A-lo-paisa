@@ -17,7 +17,7 @@ public class Producto {
 
     public Producto(String nombre, int cantidad, ProductoEnt productoe, ProductoSal productos) {
         this.nombre = nombre;
-        this.cantidad = cantidad+productoe-productos;
+       
            }
 
     public String getNombre() {
