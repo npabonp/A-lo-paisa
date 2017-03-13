@@ -23,6 +23,7 @@ public class Producto {
         this.cantidad = cantidad;
         this.cantidadE = cantidadE;
         this.cantidadS = cantidadS;
+        
     
 }
 

@@ -9,35 +9,39 @@ package a_lo_paisa;
 public class Ventas {
    
     private Producto [ ] productoo;
+    private String fecha;
 
-    public Ventas(Producto [ ]  productoo) {
-        this.productoo  = productoo ;
+    public Ventas(Producto[] productoo, String fecha) {
+        this.productoo = productoo;
+        this.fecha = fecha;
     }
 
-    public Producto [ ]  getProductoo() {
+    public Producto[] getProductoo() {
         return productoo;
     }
 
-    public void setProductoo(Producto [ ]  productoo) {
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setProductoo(Producto[] productoo) {
         this.productoo = productoo;
     }
-    
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+        
             
     public double diario(){
+    double diario=0;
     for(int i=0;i<this.productoo.length;i++){
-        double diario=this.getProductoo()[0].getCantidadS();
-    return diario;}
-    return 0;
-    } 
-    
-     public double mensual(){
-    double mensual=;
-    return mensual;
+        diario+=this.getProductoo()[0].getCantidadS();
     }
-    
-     public double anual(){
-    double anual=;
-    return anual;
-    }   
+    return diario;
+    } 
+    //dentro de la venta
+     
     
 }
