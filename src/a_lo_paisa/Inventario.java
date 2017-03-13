@@ -10,5 +10,22 @@ package a_lo_paisa;
  * @author GONZALES
  */
 public class Inventario {
+    private Producto product;
+
+    public Inventario(Producto product) {
+        this.product = product;
+    }
+
+    public Producto getProduct() {
+        return product;
+    }
+
+    public void setProduct(Producto product) {
+        this.product = product;
+    }
     
+    public int totalproductos(){
+    int totalproductos=this.getProduct().getCantidad();
+    return totalproductos;
+    }
 }

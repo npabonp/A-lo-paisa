@@ -15,10 +15,10 @@ public class Producto {
   private ProductoEnt productoe;
   private ProductoSal productos;
 
-    public Producto(String nombre, int cantidad, ProductoEnt productoe, ProductoSal productos) {
+    public Producto(String nombre, int cantidad) {
         this.nombre = nombre;
-       
-           }
+        this.cantidad = cantidad;
+    }
 
     public String getNombre() {
         return nombre;
@@ -51,13 +51,18 @@ public class Producto {
     public void setProductos(ProductoSal productos) {
         this.productos = productos;
     }
+
+    public int totalProducto (){
+      int totalProducto=this.getCantidad()-this.productos.getCantidadS()+this.getProductoe().getCantidadE();
+      return totalProducto;   
     
-    
-    
- public int totalProducto(){
-  int totalproducto= (this.getCantidad() );
-  return totalproducto;
- }
- 
-  
+    }
+   
+
 }
+
+
+
+    
+  
+
