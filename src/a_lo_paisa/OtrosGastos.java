@@ -45,12 +45,12 @@ public class OtrosGastos {
     }
 
        public double diario() {
-        double total=this.getArriendo()+this.getImpuestos()+this.getServicios();
+        double total=mensual()/30;
         return total;
     }
     
        public double mensual() {
-        double totalmes= diario()*30 ;
+        double totalmes= this.getArriendo()+this.getImpuestos()+this.getServicios();
         return totalmes;
     }
        public double anual() {

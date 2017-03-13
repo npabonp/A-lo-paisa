@@ -12,13 +12,19 @@ package a_lo_paisa;
 public class Producto {
   private String nombre;
   private int cantidad;
-  private ProductoEnt productoe;
-  private ProductoSal productos;
+  private int  cantidadE;
+  private int cantidadS;
 
-    public Producto(String nombre, int cantidad) {
+   
+
+ 
+   public Producto(String nombre, int cantidad, int cantidadE, int cantidadS) {
         this.nombre = nombre;
         this.cantidad = cantidad;
-    }
+        this.cantidadE = cantidadE;
+        this.cantidadS = cantidadS;
+    
+}
 
     public String getNombre() {
         return nombre;
@@ -28,12 +34,12 @@ public class Producto {
         return cantidad;
     }
 
-    public ProductoEnt getProductoe() {
-        return productoe;
+    public int getCantidadE() {
+        return cantidadE;
     }
 
-    public ProductoSal getProductos() {
-        return productos;
+    public int getCantidadS() {
+        return cantidadS;
     }
 
     public void setNombre(String nombre) {
@@ -44,24 +50,19 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    public void setProductoe(ProductoEnt productoe) {
-        this.productoe = productoe;
+    public void setCantidadE(int cantidadE) {
+        this.cantidadE = cantidadE;
     }
 
-    public void setProductos(ProductoSal productos) {
-        this.productos = productos;
+    public void setCantidadS(int cantidadS) {
+        this.cantidadS = cantidadS;
     }
 
-    public int totalProducto (){
-      int totalProducto=this.getCantidad()-this.productos.getCantidadS()+this.getProductoe().getCantidadE();
-      return totalProducto;   
-    
-    }
-   
-
-}
-
-
+   public int totalproducto(){
+   int totalproducto=this.getCantidad()-this.getCantidadS()+this.getCantidadE();
+       return totalproducto;
+   }
+   }
 
     
   

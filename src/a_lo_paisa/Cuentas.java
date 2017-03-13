@@ -29,7 +29,10 @@ public class Cuentas {
         this.gastot = gastot;
     }
     
+    /*public double utilidaddiaria(){
+    double utilidaddiaria=this.getVenta()-this.getGastot();
+    return utilidaddiaria;
+    }*/
     
-    
-    
+      
 }
