@@ -6,14 +6,20 @@
 package a_lo_paisa;
 
 /**
- *
- * @author jeisson
+ *La clase Fecha permitira saber el dia,mes y año en que se realiza un proceso.
+ * 
  */
 public class Fecha {
     private int dia;
     private int mes;
     private int año;
 
+    /**
+ *El construcor Fecha permitira introducir el dia,mes y año en que se realiza un proceso.
+ * @param dia indica el dia de la compra.
+ * @param mes indica el mes de la compra.
+ * @param año indica el año de la compra.
+ */
     public Fecha(int dia, int mes, int año) {
         this.dia = dia;
         this.mes = mes;

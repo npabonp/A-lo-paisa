@@ -6,8 +6,7 @@
 package a_lo_paisa;
 
 /**
- *
- * @author GONZALES
+ *La clase GastoTotal permitira calcular cuanto se ha gastado diarimente, mensualmente y anualmente en el restaurante.
  */
 public class GastoTotal {
     private OtrosGastos otros; 

@@ -6,16 +6,12 @@
 package a_lo_paisa;
 
 /**
- *
- * @author GONZALES
+ * La clase Main, permitira crear objetos de tipo producto, empleado, entre otros, ademas se podran llamar los diferentes metodos planteados a lo largo del package a_lo_paisa
  */
 public class Main {
     public static void main(String[]args){
     
-    Producto p1=new Producto("tomates",5,2,4);
-    System.out.println("hay "+p1.totalproducto()+" "+p1.getNombre());
-    
-      
+
     }
     
 }
