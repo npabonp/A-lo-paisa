@@ -29,10 +29,17 @@ public class Cuentas {
         this.gastot = gastot;
     }
     
-    /*public double utilidaddiaria(){
-    double utilidaddiaria=this.getVenta()-this.getGastot();
+    public double utilidaddiaria(){
+    double utilidaddiaria=this.getVenta().diario()-this.getGastot().gastototaldiario();
     return utilidaddiaria;
-    }*/
+    }
     
-      
+     public double utilidadmensual(){
+    double utilidadmensual=this.getVenta().mensual()-this.getGastot().gastototalmensual();
+    return utilidadmensual;
+    }
+      public double utilidadanual(){
+    double utilidadanual=this.getVenta().anual()-this.getGastot().gastototalanual();
+    return utilidadanual;
+    }
 }

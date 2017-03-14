@@ -12,9 +12,10 @@ package a_lo_paisa;
 public class Main {
     public static void main(String[]args){
     
+    Producto p1=new Producto("tomates",5,2,4);
+    System.out.println("hay "+p1.totalproducto()+" "+p1.getNombre());
     
-    
-    
+      
     }
     
 }

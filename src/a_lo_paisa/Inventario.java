@@ -25,9 +25,10 @@ public class Inventario {
     }
     
     public int totalproductos(){
+    int totalproductos=0;
     for(int i=0;i<this.product.length;i++){
-    int totalproductos=this.getProduct()[i].totalproducto();
+    totalproductos =this.getProduct()[i].totalproducto();
       }
-      return 0;
+      return totalproductos;
               }
 }
