@@ -7,7 +7,7 @@ package a_lo_paisa;
 
 /**
  *La clase Fecha permitira saber el dia,mes y año en que se realiza un proceso.
- * 
+ *Los get de la clase permiten obtener la informacion y los set permiten modificar los datos en caso de ser necesario.
  */
 public class Fecha {
     private int dia;

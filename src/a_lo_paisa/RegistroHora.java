@@ -6,14 +6,17 @@
 package a_lo_paisa;
 
 /**
- *
- * @author GONZALES
+ *La clase RegistroHora permite conocer la hora de entrada y salida de un empleado.
  */
 public class RegistroHora {
     private String entrada;
     private String salida;
-
-    public RegistroHora(String entrada, String salida) {
+/**
+ *El constructor RegistroHora permite registrar hora de entrada y salida del empleado.
+ *@param entrada recibe la hora de entrada del empleado.
+ *@param salida recibe la hora de salida del empleado.
+ */
+        public RegistroHora(String entrada, String salida) {
         this.entrada = entrada;
         this.salida = salida;
     }

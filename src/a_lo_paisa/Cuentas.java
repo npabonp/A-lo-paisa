@@ -7,36 +7,25 @@ package a_lo_paisa;
 
 /**
  * La clase Cuentas permite calcular la utilidad del restaurante, dando el valores diarios, mensuales y anuales.
+ * Los get de la clase permiten obtener la informacion y los set permiten modificar los datos en caso de ser necesario.
  */
 public class Cuentas {
     private Ventas venta;
     private GastoTotal gastot;
- /**
-     *El metodo getVenta, permitira obtener la informacion de la ventas realizadas.
-     * @return Retona las ventas.
-     */
+
     public Ventas getVenta() {
         return venta;
     }
-/**
-     *El metodo getGastot, permitira obtener la informacion de los gastos totales del restaurante.
-     * @return Retona los gastos del restaurante.
-     */
+
     public GastoTotal getGastot() {
         return gastot;
     }
 
-    /**
-     *El metodo setVenta, permitira modificar la informacion de los gastos totales del restaurante, en caso de ser necesario.
-     *  @param venta hace referencia a los datos de tipo GVentas que podrian ser modificados.
-     */
+    
     public void setVenta(Ventas venta) {
         this.venta = venta;
     }
-/**
-     *El metodo setGastot, permitira modificar la informacion de los gastos totales del restaurante, en caso de ser necesario.
-     * @param gastot hace referencia a los datos de tipo GastoTotal que podrian ser modificados.
-     */
+
     public void setGastot(GastoTotal gastot) {
         this.gastot = gastot;
     }

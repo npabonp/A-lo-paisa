@@ -7,11 +7,12 @@ package a_lo_paisa;
 
 /**
  * La clase Empleados permite conocer identificar a cada empleado del restaurante, los pagos que se le realizan y  su registro de entrda y salida.
+ * Los get de la clase permiten obtener la informacion y los set permiten modificar los datos en caso de ser necesario.
  */
 public class Empleados {
     private String nombre;
     private double identificacion;
-    private RegistroHora registro;
+    private RegistroHora [ ] registro;
     private PagosEmp pagos;
 
     /**
@@ -21,42 +22,31 @@ public class Empleados {
  * @param registro permitira introducir el registro de entrada y salida del empleado.
  * @param pagos permitira introducir los pagos que se realizan al empleado.
  */
-    public Empleados(String nombre, double identificacion, RegistroHora registro, PagosEmp pagos) {
+    public Empleados(String nombre, double identificacion, RegistroHora [ ]  registro, PagosEmp pagos) {
         this.nombre = nombre;
         this.identificacion = identificacion;
         this.registro = registro;
         this.pagos = pagos;
     }
-/**
-     *El metodo getNombre, permitira obtener el nombre del empleado.
-     * @return Retona el nombre del empleado.
-     */
+
     public String getNombre() {
         return nombre;
     }
-/**
-     *El metodo getIdentificacion, permitira obtener la identificacion del empleado.
-     * @return Retona el nombre del empleado.
-     */
+
     public double getIdentificacion() {
         return identificacion;
     }
-/**
-     *El metodo getRegistro ,permitira obtener la identificacion del empleado.
-     * @return Retona el registro de la hora de entrada y salida del empleado.
-     */
-    public RegistroHora getRegistro() {
+
+    public RegistroHora [ ]  getRegistro() {
         return registro;
     }
-/**
-     *El metodo getRegistro ,permitira obtener la identificacion del empleado.
-     * @return Retona el registro de la hora de entrada y salida del empleado.
-     */
+
     
     public PagosEmp getPagos() {
         return pagos;
     }
 
+ 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -65,7 +55,7 @@ public class Empleados {
         this.identificacion = identificacion;
     }
 
-    public void setRegistro(RegistroHora registro) {
+    public void setRegistro (RegistroHora [ ]  registro) {
         this.registro = registro;
     }
 

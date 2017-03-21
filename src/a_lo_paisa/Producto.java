@@ -6,19 +6,23 @@
 package a_lo_paisa;
 
 /**
- *
- * @author GONZALES
+ * La clase Producto permite conocer el nombre del producto, la cantidad que hay en bodega, la cantidad saliente, la cantidad entrante y la cantidad total.
+ * Los get de la clase permiten obtener la informacion y los set permiten modificar los datos en caso de ser necesario.
  */
 public class Producto {
   private String nombre;
   private int cantidad;
   private int  cantidadE;
   private int cantidadS;
-
+/**
+*El constructor Producto permite crear una instancia de tipo producto, en la que se conosca el nombre, la cantidad en bodega, la cantidad entrante y la cantidad saliente de dicho producto.
+     * @param nombre recibira el nombre del producto.
+     * @param cantidad recibira la cantidad en bodega del producto.
+     * @param cantidadE recibira la cantidad entrante del producto.
+     * @param cantidadS recibira la cantidad saliente del producto.
+ */
    
-
- 
-   public Producto(String nombre, int cantidad, int cantidadE, int cantidadS) {
+public Producto(String nombre, int cantidad, int cantidadE, int cantidadS) {
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.cantidadE = cantidadE;
@@ -59,6 +63,11 @@ public class Producto {
         this.cantidadS = cantidadS;
     }
 
+ /**
+*El metodo totalproducto permite conocer la cantidad total del producto.
+     * @return retorna la cantidad total del producto.
+*/
+    
    public int totalproducto(){
    int totalproducto=this.getCantidad()-this.getCantidadS()+this.getCantidadE();
        return totalproducto;

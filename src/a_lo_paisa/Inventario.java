@@ -7,7 +7,8 @@ package a_lo_paisa;
 
 /**
  *
- * @author GONZALES
+ * La clase Inventario, permitira conocer la totalidad de productos que hay en bodega.
+ * Los get de la clase permiten obtener la informacion y los set permiten modificar los datos en caso de ser necesario.
  */
 public class Inventario {
     private Producto [ ] product;
@@ -23,6 +24,11 @@ public class Inventario {
     public void setProduct(Producto [] product) {
         this.product = product;
     }
+    
+    /**
+     *El metodo totalproductos , permitira conecer la totalidad de productos que hay en el restaurante.
+     * @return Retona la totalidad de productos que tiene el restaurante.
+     */
     
     public int totalproductos(){
     int totalproductos=0;
